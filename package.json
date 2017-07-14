@@ -1,6 +1,7 @@
 {
     "name": "tape-runner",
     "displayName": "tape-runner",
+    "license": "MIT",
     "description": "A test runner for substack/tape tests that intelligently locates and runs tests as you edit affected code and shows the results in-line without interrupting your workflow. It directly supports on the fly execution of ESNext test code using TypeScript or Babel. It is package manager agnostic supporting NPM, JSPM, and Yarn. It is loader and module format agnostic supporting CommonJS, AMD, and System formatted test code. Arguments, TAP Reporters, environmental variables and the underling test runner can be customized.",
     "version": "0.0.1",
     "publisher": "aluanhaddad",
