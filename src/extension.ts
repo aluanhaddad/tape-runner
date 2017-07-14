@@ -49,7 +49,7 @@ export function activate(context: vscode.ExtensionContext) {
             console.info(testFiles);
             testFiles.forEach(file => {
                 vscode.commands.executeCommand('run test');
-            })
+            });
         });
 
 
