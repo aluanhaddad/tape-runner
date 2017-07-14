@@ -4,9 +4,10 @@
         "target": "es2015",
         "outDir": "out",
         "lib": [
-            "es6"
+            "esnext"
         ],
         "sourceMap": true,
+        "sourceRoot": ".",
         "rootDir": "."
     },
     "exclude": [
