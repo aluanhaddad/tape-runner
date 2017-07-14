@@ -1,0 +1,38 @@
+{
+    "name": "tape-runner",
+    "displayName": "tape-runner",
+    "description": "A test runner for substack/tape tests that intelligently locates and runs tests as you edit affected code and shows the results in-line without interrupting your workflow. It directly supports on the fly execution of ESNext test code using TypeScript or Babel. It is package manager agnostic supporting NPM, JSPM, and Yarn. It is loader and module format agnostic supporting CommonJS, AMD, and System formatted test code. Arguments, TAP Reporters, environmental variables and the underling test runner can be customized.",
+    "version": "0.0.1",
+    "publisher": "aluanhaddad",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
